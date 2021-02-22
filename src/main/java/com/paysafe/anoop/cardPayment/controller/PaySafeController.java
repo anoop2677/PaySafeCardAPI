@@ -2,8 +2,8 @@ package com.paysafe.anoop.cardPayment.controller;
 
 import com.paysafe.anoop.cardPayment.dto.output.CustomerTokenOutputDto;
 import com.paysafe.anoop.cardPayment.dto.output.ProcessPaymentOutputDto;
-import com.paysafe.anoop.cardPayment.models.CreateCustomerInputDto;
-import com.paysafe.anoop.cardPayment.models.PaymentRequest;
+import com.paysafe.anoop.cardPayment.dto.input.CreateCustomerInputDto;
+import com.paysafe.anoop.cardPayment.dto.input.PaymentRequest;
 import com.paysafe.anoop.cardPayment.service.CreateCustomerService;
 import com.paysafe.anoop.cardPayment.service.ProcessPaymentService;
 import lombok.RequiredArgsConstructor;

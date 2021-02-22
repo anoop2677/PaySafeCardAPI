@@ -1,6 +1,6 @@
 package com.paysafe.anoop.cardPayment.translator;
 import com.paysafe.anoop.cardPayment.dto.input.CustomerInputDto;
-import com.paysafe.anoop.cardPayment.models.CreateCustomerInputDto;
+import com.paysafe.anoop.cardPayment.dto.input.CreateCustomerInputDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 

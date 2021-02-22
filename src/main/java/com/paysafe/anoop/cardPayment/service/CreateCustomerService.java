@@ -1,7 +1,7 @@
 package com.paysafe.anoop.cardPayment.service;
 
 import com.paysafe.anoop.cardPayment.dto.output.CustomerTokenOutputDto;
-import com.paysafe.anoop.cardPayment.models.CreateCustomerInputDto;
+import com.paysafe.anoop.cardPayment.dto.input.CreateCustomerInputDto;
 
 import java.util.concurrent.CompletableFuture;
 

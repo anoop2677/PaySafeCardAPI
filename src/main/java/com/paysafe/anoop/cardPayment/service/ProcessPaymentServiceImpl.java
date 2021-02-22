@@ -1,11 +1,10 @@
 package com.paysafe.anoop.cardPayment.service;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.paysafe.anoop.cardPayment.Constants;
 import com.paysafe.anoop.cardPayment.client.CustomerClient;
 import com.paysafe.anoop.cardPayment.dto.input.PaymentProcessInputDto;
 import com.paysafe.anoop.cardPayment.dto.output.ProcessPaymentOutputDto;
-import com.paysafe.anoop.cardPayment.models.PaymentRequest;
+import com.paysafe.anoop.cardPayment.dto.input.PaymentRequest;
 import com.paysafe.anoop.cardPayment.translator.PaymentProcessInputTranslator;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +19,6 @@ public class ProcessPaymentServiceImpl implements ProcessPaymentService {
     @Autowired
     CustomerClient customerClient;
 
-    ObjectMapper objectMapper = new ObjectMapper();
     @Override
     public CompletableFuture<ProcessPaymentOutputDto> processPayment(PaymentRequest data) {
         return CompletableFuture.supplyAsync(() -> {

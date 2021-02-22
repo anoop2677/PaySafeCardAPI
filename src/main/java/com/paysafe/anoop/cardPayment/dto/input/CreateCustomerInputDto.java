@@ -1,4 +1,4 @@
-package com.paysafe.anoop.cardPayment.models;
+package com.paysafe.anoop.cardPayment.dto.input;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

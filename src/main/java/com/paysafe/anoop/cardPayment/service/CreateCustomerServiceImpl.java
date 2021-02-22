@@ -8,13 +8,12 @@ import com.paysafe.anoop.cardPayment.dto.input.CustomerInputDto;
 import com.paysafe.anoop.cardPayment.dto.input.SingleUseCustomerTokenInputDto;
 import com.paysafe.anoop.cardPayment.dto.output.CustomerTokenOutputDto;
 import com.paysafe.anoop.cardPayment.dto.output.SingleUseCustomerTokenOutputDto;
-import com.paysafe.anoop.cardPayment.models.CreateCustomerInputDto;
+import com.paysafe.anoop.cardPayment.dto.input.CreateCustomerInputDto;
 import com.paysafe.anoop.cardPayment.repository.CustomerRepository;
 import com.paysafe.anoop.cardPayment.translator.CustomerInputTranslator;
 import com.paysafe.anoop.cardPayment.translator.CustomerToEntityTranslator;
 import com.paysafe.anoop.cardPayment.translator.EntityToCustomerTranslator;
 import com.paysafe.anoop.cardPayment.translator.SingleUseTokenInputTranslator;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
