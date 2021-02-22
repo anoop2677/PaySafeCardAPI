@@ -11,6 +11,7 @@ public class PaymentProcessInputTranslator {
     public PaymentProcessInputDto translate(PaymentRequest pr) {
         PaymentProcessInputDto paymentProcessInputDto = new PaymentProcessInputDto();
         paymentProcessInputDto.setMerchantRefNum(pr.getMerchantRefNum());
+        System.out.println(pr.getMerchantRefNum());
         paymentProcessInputDto.setAmount(pr.getAmount());
         paymentProcessInputDto.setCurrencyCode("USD");
         paymentProcessInputDto.setDupCheck(true);
