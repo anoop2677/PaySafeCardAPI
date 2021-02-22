@@ -1,8 +1,8 @@
 package com.paysafe.anoop.cardPayment.controller;
 
-import com.paysafe.anoop.cardPayment.dto.CustomerTokenOutputDto;
-import com.paysafe.anoop.cardPayment.dto.ProcessPaymentOutputDto;
-import com.paysafe.anoop.cardPayment.models.Data;
+import com.paysafe.anoop.cardPayment.dto.output.CustomerTokenOutputDto;
+import com.paysafe.anoop.cardPayment.dto.output.ProcessPaymentOutputDto;
+import com.paysafe.anoop.cardPayment.models.CreateCustomerInputDto;
 import com.paysafe.anoop.cardPayment.models.PaymentRequest;
 import com.paysafe.anoop.cardPayment.service.CreateCustomerService;
 import com.paysafe.anoop.cardPayment.service.ProcessPaymentService;
@@ -26,8 +26,8 @@ public class PaySafeController {
 
 
     @PostMapping("/token")
-    public CompletableFuture<ResponseEntity<CustomerTokenOutputDto>> createCustomer(@RequestBody Data data) throws Exception {
-        CompletableFuture<CustomerTokenOutputDto> result = createCustomerService.createCustomer(data)
+    public CompletableFuture<ResponseEntity<CustomerTokenOutputDto>> createCustomer(@RequestBody CreateCustomerInputDto createCustomerInputDto) throws Exception {
+        CompletableFuture<CustomerTokenOutputDto> result = createCustomerService.createCustomer(createCustomerInputDto)
                 .thenApply(cst -> modelMapper.map(cst, CustomerTokenOutputDto.class));
         result.handleAsync((response, exception) -> {
             if (exception != null) {

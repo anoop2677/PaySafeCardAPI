@@ -8,7 +8,7 @@ import lombok.Setter;
 @Setter
 @lombok.Data
 @RequiredArgsConstructor
-public class Data {
+public class CreateCustomerInputDto {
     String email;
     String firstName;
 }

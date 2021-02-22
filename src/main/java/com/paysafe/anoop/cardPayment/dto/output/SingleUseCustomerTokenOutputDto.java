@@ -1,4 +1,4 @@
-package com.paysafe.anoop.cardPayment.dto;
+package com.paysafe.anoop.cardPayment.dto.output;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,7 +11,7 @@ import java.util.ArrayList;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class SingleUseCustomerTokenDto {
+public class SingleUseCustomerTokenOutputDto {
     @Getter
     @Setter
     @AllArgsConstructor

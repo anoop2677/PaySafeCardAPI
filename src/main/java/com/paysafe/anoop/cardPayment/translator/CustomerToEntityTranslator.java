@@ -1,13 +1,9 @@
 package com.paysafe.anoop.cardPayment.translator;
 
 import com.paysafe.anoop.cardPayment.domain.CustomerEntity;
-import com.paysafe.anoop.cardPayment.dto.CreateCustomerDto;
+import com.paysafe.anoop.cardPayment.dto.input.CreateCustomerDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
-
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 @Component
 @RequiredArgsConstructor
